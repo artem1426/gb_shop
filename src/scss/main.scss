@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #b8b8b8;
+}
+
+.goods-item {
+  color: #27272c;
+  border: solid white;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: black;
+  }
+  p{
+    color: darkred;
+  }
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+}
