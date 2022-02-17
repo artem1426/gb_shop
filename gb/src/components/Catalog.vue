@@ -1,29 +1,27 @@
 <template>
   <div class="container">
     <!--  TODO Filter and Search  -->
-    <div class="catalog__filter"></div>
+    <div class="catalog__filter">Filter</div>
     <ul class="catalog__list container__catalog">
-        <li>
-          <Card/>
-        </li>
-        <li>
-          <Card/>
-        </li>
-        <li>
-          <Card/>
-        </li>
-        <li>
-          <Card/>
-        </li>
+        <Card v-for="item of productList" v-bind:key="item.id" v-bind:data="item" ></Card>
     </ul>
   </div>
 </template>
 
 <script>
 import Card from "@/components/Card";
+import store from "@/store";
 export default {
   name: "Catalog",
   components: {Card},
+  data(){
+    return{
+      productList: store.state.productList,
+    }
+  },
+  mounted() {
+
+  }
 
 }
 </script>
@@ -46,12 +44,13 @@ export default {
   }
 }
 .catalog__filter{
+  padding: 10px;
   position: absolute;
   border: solid red;
   border-radius: 14px;
   min-height: 500px;
-  max-width: 290px;
-  width: 290px;
+  max-width: 280px;
+  width: 280px;
   margin-top: 15px;
 }
 </style>

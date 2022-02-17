@@ -2,13 +2,22 @@
   <header class="nav_bar">
     <ul class="container">
       <li>
-        <strong>GB_SHOP</strong>
+        <router-link to="/">
+          <strong>GB_SHOP</strong>
+        </router-link>
       </li>
       <li>
         <strong>City: {{ city }}</strong>
       </li>
       <li>
-        <strong>About</strong>
+        <router-link to="/about">
+          <strong>About</strong>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/basket">
+          <strong>Basket</strong>
+        </router-link>
       </li>
       <li>
         <Button type="button">
