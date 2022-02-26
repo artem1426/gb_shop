@@ -1,4 +1,4 @@
-import { createStore } from 'vuex'
+import {createStore} from 'vuex'
 
 export default createStore({
     state: {
@@ -10,15 +10,12 @@ export default createStore({
         ],
         basketList: [],
     },
-    getters: {
-    },
+    getters: {},
     mutations: {
-        setBasket(state, list){
+        setBasket(state, list) {
             state.basketList = list;
         },
     },
-    actions: {
-    },
-    modules: {
-    }
+    actions: {},
+    modules: {}
 });
