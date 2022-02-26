@@ -1,5 +1,5 @@
 <template>
-    <Catalog/>
+  <Catalog/>
 </template>
 <script>
 import Catalog from "@/components/Catalog";
